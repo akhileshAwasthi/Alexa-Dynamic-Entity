@@ -1,0 +1,52 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "my drink maker",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "OrderDrinkIntent",
+                  "slots": [
+                      {
+                          "name": "DrinkTypeSlot",
+                          "type": "DrinkType"
+                      }
+                  ],
+                  "samples": [
+                      "{DrinkTypeSlot}"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              }
+          ],
+          "types": [
+              {
+                  "name": "DrinkType",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "Coffee",
+                              "synonyms": [
+                                  "coffees"
+                              ]
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}
